@@ -1,0 +1,174 @@
+body {
+  background: linear-gradient(to bottom, #031f39, #000000);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Georgia', serif;
+  font-size: 48px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.contenedor {
+  background-color: rgb(240, 240, 240);
+  border-radius: 15px; 
+  box-shadow: 0 4px 12px rgba(237, 246, 246, 0.8);
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+form input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+form input::placeholder {
+  color: #888888;
+  font-style: italic;
+  font-size: 14px;
+  opacity: 0.5;
+  font-family: 'Arial', sans-serif;
+}
+
+.fusionar_archivos {
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.fusionar_archivos h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.fusionar_archivos input[type="file"] {
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.fusionar_archivos button {
+  padding: 10px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.fusionar_archivos button:hover {
+  background-color: #007B8C;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .contenedor {
+    width: 70%;
+    padding: 15px;
+  }
+
+  form label {
+    font-size: 14px;
+  }
+
+  form input, .fusionar_archivos input[type="file"] {
+    font-size: 12px;
+  }
+
+  form button, .fusionar_archivos button {
+    font-size: 14px;
+  }
+
+  .fusionar_archivos h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  .contenedor {
+    width: 80%;
+    padding: 10px;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  form input, .fusionar_archivos input[type="file"] {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  form button, .fusionar_archivos button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  form input::placeholder {
+    font-size: 10px;
+  } 
+
+  .fusionar_archivos h2 {
+    font-size: 14px;
+  }
+}

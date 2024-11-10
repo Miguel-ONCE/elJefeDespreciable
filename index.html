@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exportar datos del formulario a CSV</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+            integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+            crossorigin="anonymous">
+    </script>    
+    <script src="app.js" defer></script> 
+</head>
+<body>
+    <h1>Frases Cuyeyas</h1>
+    <main class="contenedor">
+        <div class="image">
+        </div>
+        <form id="miFormulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="No fue Julio? Entonces quién fue?" value="Julio">
+            
+            <label for="frase">Frase:</label>
+            <input type="text" id="frase" name="frase" placeholder="Pendejada que dijó xd"><br>
+            
+            <button type="button" onclick="exportarDatos()">Exportar Datos a CSV</button>
+        </form>
+        <div class="fusionar_archivos">
+            <h2>Fusionar Archivos CSV</h2>
+            <input type="file" id="inputCSV" accept=".csv" multiple>
+            <button onclick="fusionarArchivos()">Fusionar y Descargar</button>    
+        </div>
+        <div class="easter_egg">
+        </div>
+    </main>
+</body>
+</html>
