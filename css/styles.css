@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -25,7 +24,7 @@ h1 {
   border-radius: 15px; 
   box-shadow: 0 4px 12px rgba(237, 246, 246, 0.8);
   padding: 20px;
-  width: 80%;
+  width: 100%;
   max-width: 600px;
   display: flex;
   flex-direction: column;

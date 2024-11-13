@@ -32,7 +32,7 @@ function exportarDatos() {
 
     const formulario = document.getElementById('miFormulario');
     const nombre = formulario.nombre.value;
-    const edad = formulario.edad.value;
+    const edad = formulario.frase.value;
 
     const encabezados = 'Nombre,Edad\n';
     const datos = `${nombre},${edad}\n`;
@@ -49,6 +49,7 @@ function exportarDatos() {
     document.body.removeChild(enlace);
 
     URL.revokeObjectURL(url);
+    console.log("Prueba")
 }
 
 async function fusionarArchivos() {
